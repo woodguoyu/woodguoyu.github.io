@@ -15,7 +15,7 @@
   <entry>
     <title><![CDATA[github hexo]]></title>
     <url>%2F2018%2F08%2F14%2Fgithub-hexo%2F</url>
-    <content type="text"><![CDATA[code review` python@requires_authorizationdef somefunc(param1=’’, param2=0): ‘’’A docstring’’’ if param1 &gt; param2: # interesting print ‘Greater’ return (param2 - param1 + 1) or Noneclass SomeClass: pass]]></content>
+    <content type="text"><![CDATA[code review12345678@requires_authorizationdef somefunc(param1='', param2=0): '''A docstring''' if param1 &gt; param2: # interesting print 'Greater' return (param2 - param1 + 1) or Noneclass SomeClass: pass]]></content>
   </entry>
   <entry>
     <title><![CDATA[FOR RUI]]></title>
