@@ -609,6 +609,28 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '1IJlJDTrFhYrctwKBoFlC3PG-gzGzoHsz',
+        appKey: 'MGGIUTFYolzQKLgDKgCG2wfS',
+        placeholder: '愿闻其详',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
@@ -937,7 +959,7 @@
   
 
   
-  <script src="/av-core-mini-0.6.4.js"></script>
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
   <script>AV.initialize("1IJlJDTrFhYrctwKBoFlC3PG-gzGzoHsz", "MGGIUTFYolzQKLgDKgCG2wfS");</script>
   <script>
     function showTime(Counter) {
