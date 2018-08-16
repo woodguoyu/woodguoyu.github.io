@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+    
+  <url>
+    <loc>http://woodguoyu.github.io/2018/08/14/github-hexo/</loc>
+    <lastmod>2018-08-16T02:15:30.294Z</lastmod>
+    <data>
+        <display>
+        <title>github hexo</title>
+        <pubTime>2018-08-14T13:07:43.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://woodguoyu.github.io/2018/08/14/about/</loc>
+    <lastmod>2018-08-15T04:37:11.401Z</lastmod>
+    <data>
+        <display>
+        <title>关于木念白</title>
+        <pubTime>2018-08-14T14:48:43.000Z</pubTime>
+        
+        <tag>moive</tag>
+         
+        <tag>music</tag>
+         
+         
+           
+             
+              <breadCrumb title="电影评论" url="http://woodguoyu.github.io/categories/%E7%94%B5%E5%BD%B1%E8%AF%84%E8%AE%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+  <url>
+    <loc>http://woodguoyu.github.io/2018/08/14/hello-world/</loc>
+    <lastmod>2018-08-14T12:55:24.438Z</lastmod>
+    <data>
+        <display>
+        <title>FOR RUI</title>
+        <pubTime>2018-08-14T10:00:33.877Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
