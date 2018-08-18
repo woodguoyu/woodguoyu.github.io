@@ -48,31 +48,16 @@
   </entry>
   
   <entry>
-    <title>github Hexo 搭建博客并使用 nexT主题 &amp; 绑定域名</title>
+    <title></title>
     <link href="https://woodguoyu.github.io/2018/08/14/github-hexo/"/>
     <id>https://woodguoyu.github.io/2018/08/14/github-hexo/</id>
-    <published>2018-08-14T13:07:43.000Z</published>
-    <updated>2018-08-18T13:35:07.069Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><ul><li>使用github &amp; hexo 创建自己的博客</li><li>更换 nexT 主题</li><li>增加各样的功能（字数统计，阅读时间，分类，标签，站内搜索,阅读次数，头像，评论区 ，百度 google bing 站点收录 等等）</li><li>绑定自己的域名</li></ul></blockquote><h2 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h2><blockquote><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p></blockquote><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>### </p><p><icon class="iconfont gy-tuding"></icon><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener"> 点我进入Hexo 手册</a></p><blockquote><p>仔细阅读文档，严格安装文档操作</p></blockquote><h2 id="创建-本地-博客站点"><a href="#创建-本地-博客站点" class="headerlink" title="创建 本地 博客站点"></a>创建 <strong>本地</strong> 博客站点</h2><blockquote><p>在此默认成功安装 Hexo</p></blockquote><p>1.本地初始化项目</p><blockquote><p>hexo init  hexo  // hexo 是项目名称，这个随意 </p></blockquote><p> <img src="http://pdm19dogd.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-08-17%20%E4%B8%8B%E5%8D%8811.01.47.png" alt="01"><br>2.本地项目启动 // 预览</p><blockquote><p>hexo g  //g是generetor的缩写，生成博客<br><br>hexo s  //s是server的缩写，启动服务</p></blockquote><p>项目成功启动后是酱紫的</p><p> <img src="http://pdm19dogd.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-08-17%20%E4%B8%8B%E5%8D%8811.14.50.png" alt="02"><br> 默认情况下 启动的是 localhost:4000     4000端口</p><p> 若端口被占用，会出现下图所示。 可使用 自定义端口命令</p><blockquote><p>hexo s -p 5500</p></blockquote><p> <img src="http://pdm19dogd.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-08-17%20%E4%B8%8B%E5%8D%8811.10.54.png" alt="01"></p><p>打开浏览器 输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>enjoy 1min </p><p> <img src="http://pdm19dogd.bkt.clouddn.com/818D4A76FDD69E3C5B08EECAF605232D.gif" alt="01"></p><h2 id="github-篇"><a href="#github-篇" class="headerlink" title="github 篇"></a>github 篇</h2><blockquote><p>在此假设你已经有了 <a href="https://github.com/" target="_blank" rel="noopener"> <icon class="iconfont gy-github-fill"></icon> 前往 github 账号</a> </p></blockquote><blockquote><p>待续</p></blockquote>]]></content>
+    <published>2018-08-14T13:19:44.598Z</published>
+    <updated>2018-08-18T17:17:43.372Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;使用github &amp;amp; hexo 创建自己的博客&lt;/li&gt;
-&lt;li&gt;更换 nexT 主题&lt;/li&gt;
-&lt;li&gt;增加各样的功能（字数统计，阅读时间，分类，标签，站内搜索,阅读次数，头像，评论区 ，百度 google bing 站点收录
-      
-    
     </summary>
     
-      <category term="Hexo" scheme="https://woodguoyu.github.io/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="https://woodguoyu.github.io/tags/Hexo/"/>
     
   </entry>
   
