@@ -15,7 +15,7 @@
   <entry>
     <title><![CDATA[github Hexo 搭建博客并使用 nexT主题 & 绑定域名]]></title>
     <url>%2F2018%2F08%2F14%2Fgithub-hexo%2F</url>
-    <content type="text"><![CDATA[使用github &amp; hexo 创建自己的博客 更换 nexT 主题 增加各样的功能（字数统计，阅读时间，分类，标签，站内搜索,阅读次数，头像，评论区 ，百度 google bing 站点收录 等等） 绑定自己的域名 什么是 Hexo？ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 安装 Hexo### 点我进入Hexo 手册 仔细阅读文档，严格安装文档操作 创建 本地 博客站点 在此默认成功安装 Hexo 1.本地初始化项目 hexo init hexo // hexo 是项目名称，这个随意 2.本地项目启动 // 预览 hexo g //g是generetor的缩写，生成博客hexo s //s是server的缩写，启动服务 项目成功启动后是酱紫的 默认情况下 启动的是 localhost:4000 4000端口 若端口被占用，会出现下图所示。 可使用 自定义端口命令 hexo s -p 5500 打开浏览器 输入 http://localhost:4000/ enjoy 1min 太累了，明儿接着写]]></content>
+    <content type="text"><![CDATA[使用github &amp; hexo 创建自己的博客 更换 nexT 主题 增加各样的功能（字数统计，阅读时间，分类，标签，站内搜索,阅读次数，头像，评论区 ，百度 google bing 站点收录 等等） 绑定自己的域名 什么是 Hexo？ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 安装 Hexo### 点我进入Hexo 手册 仔细阅读文档，严格安装文档操作 创建 本地 博客站点 在此默认成功安装 Hexo 1.本地初始化项目 hexo init hexo // hexo 是项目名称，这个随意 2.本地项目启动 // 预览 hexo g //g是generetor的缩写，生成博客hexo s //s是server的缩写，启动服务 项目成功启动后是酱紫的 默认情况下 启动的是 localhost:4000 4000端口 若端口被占用，会出现下图所示。 可使用 自定义端口命令 hexo s -p 5500 打开浏览器 输入 http://localhost:4000/enjoy 1min github 篇 在此假设你已经有了 前往 github 账号 待续]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
