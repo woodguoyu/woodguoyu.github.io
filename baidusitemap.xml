@@ -4,8 +4,23 @@
 
     
   <url>
+    <loc>https://woodguoyu.github.io/2018/08/14/hello-world/</loc>
+    <lastmod>2018-08-19T09:17:56.832Z</lastmod>
+    <data>
+        <display>
+        <title>FOR RUI</title>
+        <pubTime>2018-08-14T10:00:33.877Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://woodguoyu.github.io/2018/08/14/github-hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2018-08-19T02:56:36.924Z</lastmod>
+    <lastmod>2018-08-19T09:16:58.203Z</lastmod>
     <data>
         <display>
         <title>github Hexo 搭建博客并使用 nexT主题 & 绑定域名</title>
@@ -23,22 +38,15 @@
     </url>
 
     
-    
-    
-    
-    
-    
   <url>
     <loc>https://woodguoyu.github.io/2018/08/14/about/</loc>
-    <lastmod>2018-08-15T04:37:11.401Z</lastmod>
+    <lastmod>2018-08-19T09:16:41.666Z</lastmod>
     <data>
         <display>
         <title>关于木念白</title>
         <pubTime>2018-08-14T14:48:43.000Z</pubTime>
         
-        <tag>moive</tag>
-         
-        <tag>music</tag>
+        <tag>me</tag>
          
          
            
@@ -52,18 +60,8 @@
     
     
     
-  <url>
-    <loc>https://woodguoyu.github.io/2018/08/14/hello-world/</loc>
-    <lastmod>2018-08-14T12:55:24.438Z</lastmod>
-    <data>
-        <display>
-        <title>FOR RUI</title>
-        <pubTime>2018-08-14T10:00:33.877Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
+    
+    
+    
+    
 </urlset>

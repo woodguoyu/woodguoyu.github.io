@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://woodguoyu.github.io/2018/08/14/hello-world/</loc>
+    
+    <lastmod>2018-08-19T09:17:56.832Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://woodguoyu.github.io/2018/08/14/github-hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     
-    <lastmod>2018-08-19T02:56:36.924Z</lastmod>
+    <lastmod>2018-08-19T09:16:58.203Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://woodguoyu.github.io/2018/08/14/about/</loc>
+    
+    <lastmod>2018-08-19T09:16:41.666Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://woodguoyu.github.io/about/index.html</loc>
+    
+    <lastmod>2018-08-19T08:55:09.604Z</lastmod>
     
   </url>
   
@@ -37,30 +58,9 @@
   </url>
   
   <url>
-    <loc>https://woodguoyu.github.io/2018/08/14/about/</loc>
-    
-    <lastmod>2018-08-15T04:37:11.401Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://woodguoyu.github.io/categories/index.html</loc>
     
     <lastmod>2018-08-15T04:31:34.042Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://woodguoyu.github.io/about/index.html</loc>
-    
-    <lastmod>2018-08-14T15:57:23.523Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://woodguoyu.github.io/2018/08/14/hello-world/</loc>
-    
-    <lastmod>2018-08-14T12:55:24.438Z</lastmod>
     
   </url>
   
