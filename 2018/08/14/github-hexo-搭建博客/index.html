@@ -497,10 +497,10 @@
 <p>打开浏览器 输入 <a href="http://localhost:xxxx/" target="_blank" rel="noopener">http://localhost:xxxx/</a>  </p>
 <h3 id="安装并配置-nexT-主题"><a href="#安装并配置-nexT-主题" class="headerlink" title="安装并配置 nexT 主题"></a>安装并配置 nexT 主题</h3><ol>
 <li><p>在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone http<span class="variable">s:</span>//github.<span class="keyword">com</span>/iissnan/hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>启用主题</strong> ：打开 站点配置文件 _config.yml（nexT 主题配置也有 _config.yml 配置文件，切忌弄混乱）， 找到 theme 字段，并将其值更改为 next。hexo s 启动服务（上有所述），预览。</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: <span class="keyword">next</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>主题配置</p>
 </li>
@@ -512,7 +512,7 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/woodguoyu/woodguoyu.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>发布至 github，执行以下命令行</p>
-<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>. hexo clean</span><br><span class="line"><span class="number">2</span>. hexo g (<span class="keyword">generate</span>)</span><br><span class="line"><span class="number">3</span>. hexo d (deploy)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. hexo clean</span><br><span class="line">2. hexo g (generate)</span><br><span class="line">3. hexo d (deploy)</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>发布完毕，打开自己的 xxxx.github.io ，查看。可能不能马上同步，等几分钟也是可以的。</p>
@@ -521,13 +521,13 @@
 <p>one min latter</p>
 <p> <img src="http://pdm19dogd.bkt.clouddn.com/E9E57D902747D46CEBD4A0877139C676" alt=""></p>
 <h3 id="添加自己的博客文章"><a href="#添加自己的博客文章" class="headerlink" title="添加自己的博客文章"></a>添加自己的博客文章</h3><ol>
-<li>在终端窗口下，定位到 Hexo 站点目录下<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="type">post</span> <span class="string">'文章名称'</span></span><br></pre></td></tr></table></figure>
+<li>在终端窗口下，定位到 Hexo 站点目录下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &apos;文章名称&apos;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>生成文档在  <strong>博客/source/_post/文章名称.md</strong>，hexo 会自动编译markdown 文件</p>
 <ol start="2">
 <li>编辑文档</li>
-<li>重新发布<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>. hexo clean</span><br><span class="line"><span class="number">2</span>. hexo g (<span class="keyword">generate</span>)</span><br><span class="line"><span class="number">3</span>. hexo d (deploy)</span><br></pre></td></tr></table></figure>
+<li>重新发布<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. hexo clean</span><br><span class="line">2. hexo g (generate)</span><br><span class="line">3. hexo d (deploy)</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>整个过程走下来，尤其是配置 nexT 主题各个功能。问题倒是不少，遇到的纸老虎后续会添加进去，如若看到，尽可能少走弯路。</p>
@@ -670,7 +670,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -692,7 +692,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
