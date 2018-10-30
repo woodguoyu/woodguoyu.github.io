@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://woodguoyu.github.io/2018/08/14/about/</loc>
+    
+    <lastmod>2018-10-30T06:48:18.860Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://woodguoyu.github.io/about/index.html</loc>
+    
+    <lastmod>2018-10-30T06:45:38.328Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://woodguoyu.github.io/2018/10/16/ag-grid-vue-%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3%EF%BC%88%E8%BF%9B%E9%98%B6%EF%BC%89/</loc>
     
     <lastmod>2018-10-16T06:11:44.679Z</lastmod>
@@ -33,20 +47,6 @@
     <loc>https://woodguoyu.github.io/2018/08/24/iview2-%E5%8D%87%E7%BA%A7-iview3/</loc>
     
     <lastmod>2018-08-27T00:39:57.179Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://woodguoyu.github.io/2018/08/14/about/</loc>
-    
-    <lastmod>2018-08-19T09:16:41.666Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://woodguoyu.github.io/about/index.html</loc>
-    
-    <lastmod>2018-08-19T08:55:09.604Z</lastmod>
     
   </url>
   
