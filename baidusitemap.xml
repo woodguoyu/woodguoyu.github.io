@@ -4,6 +4,45 @@
 
     
   <url>
+    <loc>https://woodguoyu.github.io/2018/11/09/Vue-js-%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</loc>
+    <lastmod>2018-11-22T09:39:17.331Z</lastmod>
+    <data>
+        <display>
+        <title>Vue.js 组件编码规范</title>
+        <pubTime>2018-11-09T05:59:57.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+        <tag>前端编码规范</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://woodguoyu.github.io/2018/08/14/github-hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2018-11-22T08:06:05.585Z</lastmod>
+    <data>
+        <display>
+        <title>github Hexo 搭建博客并使用 nexT主题 & 绑定域名</title>
+        <pubTime>2018-08-14T13:07:43.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="https://woodguoyu.github.io/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://woodguoyu.github.io/2018/11/09/Airbnb-JavaScript-%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2018-11-09T06:03:56.874Z</lastmod>
     <data>
@@ -30,28 +69,9 @@
         <title>Airbnb CSS / Sass 指南</title>
         <pubTime>2018-11-09T06:03:05.000Z</pubTime>
         
+        <tag>前端编码规范</tag>
+         
         <tag>CSS</tag>
-         
-        <tag>前端编码规范</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://woodguoyu.github.io/2018/11/09/Vue-js-%E7%BB%84%E4%BB%B6%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</loc>
-    <lastmod>2018-11-09T06:01:19.038Z</lastmod>
-    <data>
-        <display>
-        <title>Vue.js 组件编码规范</title>
-        <pubTime>2018-11-09T05:59:57.000Z</pubTime>
-        
-        <tag>前端编码规范</tag>
-         
-        <tag>vue</tag>
          
          
            
@@ -114,26 +134,6 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://woodguoyu.github.io/2018/08/14/github-hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2018-08-27T00:39:57.179Z</lastmod>
-    <data>
-        <display>
-        <title>github Hexo 搭建博客并使用 nexT主题 & 绑定域名</title>
-        <pubTime>2018-08-14T13:07:43.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="https://woodguoyu.github.io/categories/Hexo/"/>
-          
         </display>
     </data>
     </url>
