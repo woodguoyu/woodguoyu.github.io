@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woodguoyu.github.io/"/>
-  <updated>2018-11-09T06:03:51.109Z</updated>
+  <updated>2019-04-17T11:40:40.472Z</updated>
   <id>https://woodguoyu.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端构建工具对比</title>
+    <link href="https://woodguoyu.github.io/2019/04/15/%E5%89%8D%E7%AB%AF%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E5%AF%B9%E6%AF%94/"/>
+    <id>https://woodguoyu.github.io/2019/04/15/前端构建工具对比/</id>
+    <published>2019-04-14T16:37:55.000Z</published>
+    <updated>2019-04-17T11:40:40.472Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p align="center"><br>  <img src="/images/BuildTools/pack.png"><br></p><p></p><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>前端生态日益健壮（2019年4月），各种工具层出不穷，首先关于前端一些热门名词，于此作出简单的概要。</p><blockquote><ul><li>node , 是javascript语言的环境和平台，</li><li>npm , yarn , bower 是一类，包管理，</li><li>webpack , browserify , rollup 是一类，javascript模块打包方案(方案+工具+插件)，</li><li>babel, TypeScript, 算是一类，ES编译器，</li><li>requirejs , seajs 是一类, 以前基于 commonjs，amd，cmd，umd 之类的模块类包加载方案的框架，</li><li>grunt , gulp , 前端工具，结合插件，合并、压缩、编译 sass/less，browser 自动载入资源，</li><li>react , angular , vue , backbone 是一类，mvc , mvvm , mvp 之类的前端框架，</li><li>jquery , zepto , prototype 是一类，前端 DOM , BOM 类库 ，</li><li>ext , yui , kissy , dojo 是一类，前端应用组件，以前大而全的解决方案，</li><li>rxjs , lodash , underscore , ramda , immutable ,  moment , mathjs 是一类，JavaScript Utility Libraries，</li><li>JSLint , JSHint , JSCS , ESLint , 是一类，代码检验，</li><li>Ionic , NativeScript , React Native , Flutter , PhoneGap/Cordova , Xamarin 算是一类，Cross-Platform 开发工具，</li><li>Less , Sa|css , Stylus , PostCSS , 是一类，CSS 程式化方案，</li><li>Karma , Protractor , 测试</li></ul></blockquote><p>此篇主要讲前端构建工具。既然本篇主要聊的时”构建化”，那么第一个问题来了: </p><h1 id="为什使用构建化工具？"><a href="#为什使用构建化工具？" class="headerlink" title="为什使用构建化工具？"></a>为什使用构建化工具？</h1><blockquote><p>一句话：自动化。对于需要反复重复的任务，例如压缩（minification）、编译、单元测试、linting等，自动化工具可以减轻你的劳动，简化你的工作。当你在 Gruntfile 文件正确配置好了任务，<br>任务运行器就会自动帮你或你的小组完成大部分无聊的工作。</p></blockquote><h1 id="Webpack、Browserify-和-Gulp-三者之间到底是怎样的关系？"><a href="#Webpack、Browserify-和-Gulp-三者之间到底是怎样的关系？" class="headerlink" title="Webpack、Browserify 和 Gulp 三者之间到底是怎样的关系？"></a>Webpack、Browserify 和 Gulp 三者之间到底是怎样的关系？</h1><blockquote><p>简单的说，Grunt / Gulp 和 browserify / webpack 不是一回事。</p><ol><li>Gulp / Grunt 可以理解为帮助前端自动化的工具，用于优化前端工作流程。比如自动刷新页面、combo、压缩css、js、编译less等等。二者的区别可以自行百度，个人推荐Gulp。</li><li>browserify / webpack 提供的是一个前端模块化的方案，和requirejs类似但又有不同。</li><li>requirejs是一种在线”编译” 模块的方案，相当于在页面上加载一个AMD 解释器，以便于览器能够识别 define、exports、module，而这些东西就是用于模块化的关键。</li><li>而browserify / webpack，则是一个预编译模块的方案。它是预编译的，不需要在浏览器中加载解释器。</li></ol></blockquote><p>因此完全可以gulp+webpack 或者gulp+browserify这样的方式搭配使用，甚至，只使用webpack，由于其强大的插件支持，也能满足绝大多数需求了。</p><h1 id="Grunt-amp-amp-Gulp"><a href="#Grunt-amp-amp-Gulp" class="headerlink" title="Grunt &amp;&amp; Gulp"></a><a href="https://www.gruntjs.net/" target="_blank" rel="noopener">Grunt</a> &amp;&amp; <a href="https://www.gulpjs.com.cn/" target="_blank" rel="noopener">Gulp</a></h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br&gt;  &lt;img src=&quot;/images/BuildTools/pack.png&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言
+      
+    
+    </summary>
+    
+    
+      <category term="前端编码规范" scheme="https://woodguoyu.github.io/tags/%E5%89%8D%E7%AB%AF%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
   
   <entry>
     <title>Airbnb CSS / Sass 指南</title>
