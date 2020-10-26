@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woodguoyu.github.io/"/>
-  <updated>2019-04-17T11:40:40.472Z</updated>
+  <updated>2020-10-26T03:36:41.433Z</updated>
   <id>https://woodguoyu.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac 使用技巧</title>
+    <link href="https://woodguoyu.github.io/2020/10/26/Mac-%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>https://woodguoyu.github.io/2020/10/26/Mac-使用技巧/</id>
+    <published>2020-10-26T03:13:03.000Z</published>
+    <updated>2020-10-26T03:36:41.433Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="更换硬盘睡眠耗电异常问题修复方法"><a href="#更换硬盘睡眠耗电异常问题修复方法" class="headerlink" title="更换硬盘睡眠耗电异常问题修复方法"></a>更换硬盘睡眠耗电异常问题修复方法</h2><h3 id="一、更改休眠模式选项"><a href="#一、更改休眠模式选项" class="headerlink" title="一、更改休眠模式选项"></a>一、更改休眠模式选项</h3><ol><li>查看当前的电源管理配置：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pmset -g</span><br></pre></td></tr></table></figure></li></ol><blockquote><p>hibernatemode 对应的数值为 0 ，则说明目前 Mac 在休眠模式下耗电非常严重；如果 hibernatemode 对应的数值为 3 ，则说明目前 Mac 在休眠模式下耗电正常（默认状态）；如果 hibernatemode 对应的数值为 25 ，则说明目前 Mac 在休眠模式下耗电非常少。</p></blockquote><ol start="2"><li>修改 hibernatemode 对应的数值： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pmset -a hibernatemode 25</span><br></pre></td></tr></table></figure></li></ol><h3 id="二、将休眠时的网络状态设置为「关闭」"><a href="#二、将休眠时的网络状态设置为「关闭」" class="headerlink" title="二、将休眠时的网络状态设置为「关闭」"></a>二、将休眠时的网络状态设置为「关闭」</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pmset -b tcpkeepalive 0</span><br></pre></td></tr></table></figure><h2 id="缩短-Mac-的开机密码长度"><a href="#缩短-Mac-的开机密码长度" class="headerlink" title="缩短 Mac 的开机密码长度"></a>缩短 Mac 的开机密码长度</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwpolicy -clearaccountpolicies</span><br></pre></td></tr></table></figure><h2 id="修改-启动台行列数量"><a href="#修改-启动台行列数量" class="headerlink" title="修改 启动台行列数量"></a>修改 启动台行列数量</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">改变行数：defaults write com.apple.dock springboard-rows -int X</span><br><span class="line">改变列数：defaults write com.apple.dock springboard-columns -int X</span><br><span class="line">改变生效：killall Dock</span><br></pre></td></tr></table></figure><blockquote><p>其中X是大于0的整数。根据自己喜好调整即可。</p></blockquote><p>恢复默认：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dock springboard-rows Default</span><br><span class="line">defaults write com.apple.dock springboard-columns Default</span><br><span class="line">killall Dock</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;更换硬盘睡眠耗电异常问题修复方法&quot;&gt;&lt;a href=&quot;#更换硬盘睡眠耗电异常问题修复方法&quot; class=&quot;headerlink&quot; title=&quot;更换硬盘睡眠耗电异常问题修复方法&quot;&gt;&lt;/a&gt;更换硬盘睡眠耗电异常问题修复方法&lt;/h2&gt;&lt;h3 id=&quot;一、更改休眠模式选
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>前端构建工具对比</title>
