@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+<meta name="baidu-site-verification" content="7RGCQer6XZ">
+<meta name="baidu-site-verification" content="8ekWWEPMzq">
+<meta name="msvalidate.01" content="9E38695671DC9CE12CF1E99772978DA9">
+<meta name="google-site-verification" content="putZyyFq1fZRhJqQj4YotJri785xOYJ6WoX-ymGmlVY">
+<meta name="google-site-verification" content="LIiKTNOX4YaNN-l85xyv3j-guq-9brzU61qp8KYXgis">
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_798158_wn4udd6bx9.css">
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="true">
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="vue,ag-grid,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="木念白" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="ag-grid-vue 官方文档  ag-grid-vue (进阶) 在Vue项目中开始使用ag-Grid ag-Grid的“ag”部分代表“不可知”。内部ag-Grid引擎在TypeScript中实现，具有零依赖性。 ag-Grid通过包装器组件支持Vue。包装器允许您在应用程序中使用ag-Grid，就像任何其他Vue组件一样 - 您通过属性绑定传递配置并通过事件绑定处理事件。您甚至可以使">
+<meta name="keywords" content="vue,ag-grid">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ag-grid-vue 中文文档（入门）">
+<meta property="og:url" content="https://woodguoyu.github.io/2018/10/15/ag-grid-vue-中文文档（入门）/index.html">
+<meta property="og:site_name" content="木念白">
+<meta property="og:description" content="ag-grid-vue 官方文档  ag-grid-vue (进阶) 在Vue项目中开始使用ag-Grid ag-Grid的“ag”部分代表“不可知”。内部ag-Grid引擎在TypeScript中实现，具有零依赖性。 ag-Grid通过包装器组件支持Vue。包装器允许您在应用程序中使用ag-Grid，就像任何其他Vue组件一样 - 您通过属性绑定传递配置并通过事件绑定处理事件。您甚至可以使">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.ag-grid.com/getting-started/step1.png">
+<meta property="og:image" content="https://www.ag-grid.com/getting-started/step2.png">
+<meta property="og:image" content="https://www.ag-grid.com/getting-started/step3.png">
+<meta property="og:updated_time" content="2022-07-29T02:12:38.428Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ag-grid-vue 中文文档（入门）">
+<meta name="twitter:description" content="ag-grid-vue 官方文档  ag-grid-vue (进阶) 在Vue项目中开始使用ag-Grid ag-Grid的“ag”部分代表“不可知”。内部ag-Grid引擎在TypeScript中实现，具有零依赖性。 ag-Grid通过包装器组件支持Vue。包装器允许您在应用程序中使用ag-Grid，就像任何其他Vue组件一样 - 您通过属性绑定传递配置并通过事件绑定处理事件。您甚至可以使">
+<meta name="twitter:image" content="https://www.ag-grid.com/getting-started/step1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://woodguoyu.github.io/2018/10/15/ag-grid-vue-中文文档（入门）/">
+
+
+
+
+
+  <title>ag-grid-vue 中文文档（入门） | 木念白</title>
+  
+
+
+
+
+
+
+
+
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">木念白</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-zone">
+          <a href="/learn/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-gamepad"></i> <br>
+            
+            zone
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://woodguoyu.github.io/2018/10/15/ag-grid-vue-中文文档（入门）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="木念白">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="木念白">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">ag-grid-vue 中文文档（入门）</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-15T09:49:50+08:00">
+                2018-10-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/10/15/ag-grid-vue-中文文档（入门）/" class="leancloud_visitors" data-flag-title="ag-grid-vue 中文文档（入门）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3,657 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  16 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <link rel="stylesheet" href="https://at.alicdn.com/t/font_798158_wn4udd6bx9.css">
+
+<p><a href="https://www.ag-grid.com/vue-getting-started/" target="_blank" rel="noopener"> ag-grid-vue 官方文档</a></p>
+<p><a href="https://yuguo.site/2018/10/16/ag-grid-vue-%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3%EF%BC%88%E8%BF%9B%E9%98%B6%EF%BC%89/#more" target="_blank" rel="noopener"> ag-grid-vue (进阶)</a></p>
+<h1 id="在Vue项目中开始使用ag-Grid"><a href="#在Vue项目中开始使用ag-Grid" class="headerlink" title="在Vue项目中开始使用ag-Grid"></a>在Vue项目中开始使用ag-Grid</h1><blockquote>
+<p>ag-Grid的“ag”部分代表“不可知”。内部ag-Grid引擎在TypeScript中实现，具有零依赖性。 ag-Grid通过包装器组件支持Vue。包装器允许您在应用程序中使用ag-Grid，就像任何其他Vue组件一样 - 您通过属性绑定传递配置并通过事件绑定处理事件。您甚至可以使用Vue组件来自定义网格UI和单元格内容/行为。</p>
+</blockquote>
+<blockquote>
+<p>在本文中，我们将引导您完成将ag-Grid添加到现有Vue项目的必要步骤，并配置它的一些<a href="https://www.ag-grid.com/features-overview/" target="_blank" rel="noopener">基本功能</a>。我们将向您展示网格的一些基本原理（传递属性，使用API​​等）。为了更好的视觉效果和代码质量，我们还将使用Sass变量调整网格的视觉外观。</p>
+</blockquote>
+<h2 id="将ag-Grid添加到您的项目中"><a href="#将ag-Grid添加到您的项目中" class="headerlink" title="将ag-Grid添加到您的项目中"></a>将ag-Grid添加到您的项目中</h2><p>出于本教程的目的，我们将使用角度CLI来构建Vue应用程序。如果您的项目具有不同的配置，请不要担心。 Ag-Grid及其Vue包装器作为NPM包分发，可以与任何常见的Vue项目模块捆绑器设置一起使用。让我们按照Vue CLI说明操作 - 在终端中运行以下命令：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br><span class="line">vue create my-project    # accept the defaults for all prompts</span><br><span class="line">cd my-project</span><br><span class="line">npm run serve</span><br></pre></td></tr></table></figure></p>
+<p>如果一切顺利，npm run serve已经启动了Web服务器。您可以在localhost：8080打开默认应用程序。<br><br><br>下一步，让我们添加ag-Grid NPM软件包。在我的项目中运行以下命令（您可能需要一个新的终端实例）：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save ag-grid-community ag-grid-vue</span><br></pre></td></tr></table></figure></p>
+<p>经过几秒钟的等待。让我们来实际编码吧！作为第一步，让我们添加ag-Grid ag-Grid样式 - 在<code>src / main.js</code>中导入它们：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";</span><br><span class="line">import "../node_modules/ag-grid-community/dist/styles/ag-theme-balham.css";</span><br></pre></td></tr></table></figure></p>
+<p>上面的代码导入了网格“结构”样式表（ag-grid.css），以及一个可用的网格主题：（ag-theme-balham.css）。网格有几个不同的主题;选择一个与您的项目设计相匹配的。</p>
+<p><icon class="iconfont gy-sound-fill"></icon><br><code>在后面的部分中，我们将介绍如何使用SCSS自定义主题外观，这是我们推荐的方法。</code><br>这将是一个简单的例子，我们可以删除<code>src / components</code>目录。我们的示例应用程序将存在于<code>src / App.vue</code>中。<br><br><br>我们将组件定义添加到模板中。编辑app / App.vue并替换脚手架代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ag-grid-vue</span> <span class="attr">style</span>=<span class="string">"width: 500px; height: 500px;"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">class</span>=<span class="string">"ag-theme-balham"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">:columnDefs</span>=<span class="string">"columnDefs"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">:rowData</span>=<span class="string">"rowData"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ag-grid-vue</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>接下来，让我们声明基本的网格配置。编辑 <code>src / App.vue</code>：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="keyword">import</span> &#123;AgGridVue&#125; <span class="keyword">from</span> <span class="string">"ag-grid-vue"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">        name: <span class="string">'App'</span>,</span><br><span class="line">        data() &#123;</span><br><span class="line">            <span class="keyword">return</span> &#123;</span><br><span class="line">                columnDefs: <span class="literal">null</span>,</span><br><span class="line">                rowData: <span class="literal">null</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        components: &#123;</span><br><span class="line">            AgGridVue</span><br><span class="line">        &#125;,</span><br><span class="line">        beforeMount() &#123;</span><br><span class="line">            <span class="keyword">this</span>.columnDefs = [</span><br><span class="line">                &#123;<span class="attr">headerName</span>: <span class="string">'Make'</span>, <span class="attr">field</span>: <span class="string">'make'</span>&#125;,</span><br><span class="line">                &#123;<span class="attr">headerName</span>: <span class="string">'Model'</span>, <span class="attr">field</span>: <span class="string">'model'</span>&#125;,</span><br><span class="line">                &#123;<span class="attr">headerName</span>: <span class="string">'Price'</span>, <span class="attr">field</span>: <span class="string">'price'</span>&#125;</span><br><span class="line">            ];</span><br><span class="line"></span><br><span class="line">            <span class="keyword">this</span>.rowData = [</span><br><span class="line">                &#123;<span class="attr">make</span>: <span class="string">'Toyota'</span>, <span class="attr">model</span>: <span class="string">'Celica'</span>, <span class="attr">price</span>: <span class="number">35000</span>&#125;,</span><br><span class="line">                &#123;<span class="attr">make</span>: <span class="string">'Ford'</span>, <span class="attr">model</span>: <span class="string">'Mondeo'</span>, <span class="attr">price</span>: <span class="number">32000</span>&#125;,</span><br><span class="line">                &#123;<span class="attr">make</span>: <span class="string">'Porsche'</span>, <span class="attr">model</span>: <span class="string">'Boxter'</span>, <span class="attr">price</span>: <span class="number">72000</span>&#125;</span><br><span class="line">            ];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>上面的代码提供了网格的两个基本配置属性 - 列定义（columnDefs）和数据（rowData）。在我们的例子中，列定义包含三列;每个列条目指定要在表的主体中显示的标题标签和数据字段。<br><br><br>这是ag-grid组件定义，带有两个属性绑定 - rowData和columnDefs。该组件还接受标准DOM样式和类。我们将类设置为ag-theme-balham，它定义了网格主题。您可能已经注意到，CSS类与我们之前导入的CSS文件的名称相匹配。<br><br><br>如果一切按预期工作，您应该看到一个简单的网格，如截图中的网格：<br> <img src="https://www.ag-grid.com/getting-started/step1.png" alt></p>
+<h2 id="启用排序和筛选"><a href="#启用排序和筛选" class="headerlink" title="启用排序和筛选"></a>启用排序和筛选</h2><p>到现在为止还挺好。但是能够对数据进行排序以帮助我们查看哪辆车最便宜/最贵是不是很好？好吧，在ag-Grid中启用排序实际上非常简单 - 您需要做的就是将<code>enableSorting</code>属性设置为组件。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ag-grid-vue</span> <span class="attr">style</span>=<span class="string">"width: 500px; height: 500px;"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">class</span>=<span class="string">"ag-theme-balham"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">:columnDefs</span>=<span class="string">"columnDefs"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">:rowData</span>=<span class="string">"rowData"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag">             <span class="attr">:enableSorting</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ag-grid-vue</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>添加属性后，您应该能够通过单击列标题对网格进行排序。单击标题可以通过升序，降序和无排序来切换。<br><br><br>我们的应用程序没有太多行，因此查找数据相当容易。但是很容易想象一个真实世界的应用程序如何拥有数百个（甚至数十万个！）或行，包含许多列。在这样的数据集中，过滤功能的存在是不可避免的。<br><br><br>与排序一样，启用过滤就像设置<code>enableFilter</code>属性一样简单<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ag-grid-vue</span> <span class="attr">style</span>=<span class="string">"width: 500px; height: 500px;"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">class</span>=<span class="string">"ag-theme-balham"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">:columnDefs</span>=<span class="string">"columnDefs"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">:rowData</span>=<span class="string">"rowData"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag">             <span class="attr">:enableSorting</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">:enableFilter</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ag-grid-vue</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>设置此属性后，当您将标题悬停时，网格将显示一个小列菜单图标。按下它将显示一个带有过滤UI的弹出窗口，您可以选择过滤器的类型和要过滤的文本。<br><img src="https://www.ag-grid.com/getting-started/step2.png" alt></p>
+<h2 id="获取远程数据"><a href="#获取远程数据" class="headerlink" title="获取远程数据"></a>获取远程数据</h2><p>模拟静态数据在真实的项目中不不靠谱的，大多数时候，我们需要处理来自后端的的数据。感谢 React，实现这一点实际上非常简单。请注意，实际数据提取是在网格组件之外执行的 - 我们使用的是HTML5提取API。<br><br><br>现在，让我们删除硬编码数据并从远程服务器获取一个。编辑 <code>src / App.vue</code> 并添加以下fetch语句：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">beforeMount() &#123;</span><br><span class="line">    <span class="keyword">this</span>.columnDefs = [</span><br><span class="line">        &#123;<span class="attr">headerName</span>: <span class="string">'Make'</span>, <span class="attr">field</span>: <span class="string">'make'</span>&#125;,</span><br><span class="line">        &#123;<span class="attr">headerName</span>: <span class="string">'Model'</span>, <span class="attr">field</span>: <span class="string">'model'</span>&#125;,</span><br><span class="line">        &#123;<span class="attr">headerName</span>: <span class="string">'Price'</span>, <span class="attr">field</span>: <span class="string">'price'</span>&#125;</span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    fetch(<span class="string">'https://api.myjson.com/bins/15psn9'</span>)</span><br><span class="line">        .then(<span class="function"><span class="params">result</span> =&gt;</span> result.json())</span><br><span class="line">        .then(<span class="function"><span class="params">rowData</span> =&gt;</span> <span class="keyword">this</span>.rowData = rowData);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>远程数据与我们最初的数据相同，因此您不应该注意到对网格的任何实际更改。但是，如果打开开发者工具，您将看到执行其他HTTP请求。</p>
+<h2 id="启用选择"><a href="#启用选择" class="headerlink" title="启用选择"></a>启用选择</h2><p>就在我们认为完成任务时，经理会出现一系列新要求！事实证明，我们需要允许用户从网格中选择某些行，并将它们标记为系统中的标记。我们将把旗帜切换状态和持久性留给后端团队。在我们这方面，我们应该启用选择，然后获取所选记录并通过API调用将它们传递给远程服务端点。<br><br><br>幸运的是，使用ag-Grid，上述任务非常简单。您可能已经猜到，这只是添加和更改几个属性的问题。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ag-grid-vue</span> <span class="attr">style</span>=<span class="string">"width: 500px; height: 500px;"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">class</span>=<span class="string">"ag-theme-balham"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">:columnDefs</span>=<span class="string">"columnDefs"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">:rowData</span>=<span class="string">"rowData"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">:enableSorting</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">:enableFilter</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                 <span class="attr">rowSelection</span>=<span class="string">"multiple"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ag-grid-vue</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">import</span> &#123;AgGridVue&#125; <span class="keyword">from</span> <span class="string">"ag-grid-vue"</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="javascript">        name: <span class="string">'App'</span>,</span></span><br><span class="line">        data() &#123;</span><br><span class="line"><span class="javascript">            <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="javascript">                columnDefs: <span class="literal">null</span>,</span></span><br><span class="line"><span class="javascript">                rowData: <span class="literal">null</span></span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        components: &#123;</span><br><span class="line">            AgGridVue</span><br><span class="line">        &#125;,</span><br><span class="line">        beforeMount() &#123;</span><br><span class="line"><span class="javascript">            <span class="keyword">this</span>.columnDefs = [</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Make'</span>, <span class="attr">field</span>: <span class="string">'make'</span>, <span class="attr">checkboxSelection</span>: <span class="literal">true</span>&#125;,</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Model'</span>, <span class="attr">field</span>: <span class="string">'model'</span>&#125;,</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Price'</span>, <span class="attr">field</span>: <span class="string">'price'</span>&#125;</span></span><br><span class="line">            ];</span><br><span class="line"></span><br><span class="line"><span class="javascript">            fetch(<span class="string">'https://api.myjson.com/bins/15psn9'</span>)</span></span><br><span class="line"><span class="javascript">                .then(<span class="function"><span class="params">result</span> =&gt;</span> result.json())</span></span><br><span class="line"><span class="javascript">                .then(<span class="function"><span class="params">rowData</span> =&gt;</span> <span class="keyword">this</span>.rowData = rowData);</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>接下来，让我们启用多行选择，以便用户可以选择多行：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ag-grid-vue</span> <span class="attr">style</span>=<span class="string">"width: 500px; height: 500px;"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">class</span>=<span class="string">"ag-theme-balham"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">:columnDefs</span>=<span class="string">"columnDefs"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">:rowData</span>=<span class="string">"rowData"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag">             <span class="attr">:enableSorting</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">:enableFilter</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">rowSelection</span>=<span class="string">"multiple"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ag-grid-vue</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><icon class="iconfont gy-sound-fill"></icon><br><code>我们使用checkboxSelection：true为make列添加了一个复选框，然后启用了rowSelection =“multiple”的多行选择。</code></p>
+<p>Great！现在，第一列包含一个复选框，单击该复选框时，将选择该行。我们唯一需要添加的是一个获取所选数据并将其发送到服务器的按钮。为此，我们将使用<code>ag-Grid API</code> - 我们将在gridReady事件中存储对网格和列API的引用<br><br><br>为了测试这个，我们将添加一个获取所选数据并将其发送到服务器的按钮。让我们继续进行这些更改：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"getSelectedRows()"</span>&gt;</span>Get Selected Rows<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">ag-grid-vue</span> <span class="attr">style</span>=<span class="string">"width: 500px; height: 500px;"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">class</span>=<span class="string">"ag-theme-balham"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">:columnDefs</span>=<span class="string">"columnDefs"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">:rowData</span>=<span class="string">"rowData"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">:enableSorting</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">:enableFilter</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">rowSelection</span>=<span class="string">"multiple"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag">                     <span class="attr">:gridReady</span>=<span class="string">"onGridReady"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ag-grid-vue</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">import</span> &#123;AgGridVue&#125; <span class="keyword">from</span> <span class="string">"ag-grid-vue"</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="javascript">        name: <span class="string">'App'</span>,</span></span><br><span class="line">        data() &#123;</span><br><span class="line"><span class="javascript">            <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="javascript">                columnDefs: <span class="literal">null</span>,</span></span><br><span class="line"><span class="javascript">                rowData: <span class="literal">null</span></span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        components: &#123;</span><br><span class="line">            AgGridVue</span><br><span class="line">        &#125;,</span><br><span class="line">        methods: &#123;</span><br><span class="line">            onGridReady(params) &#123;</span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.gridApi = params.api;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.columnApi = params.columnApi;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            getSelectedRows() &#123;</span><br><span class="line"><span class="javascript">                <span class="keyword">const</span> selectedNodes = <span class="keyword">this</span>.gridApi.getSelectedNodes();</span></span><br><span class="line"><span class="javascript">                <span class="keyword">const</span> selectedData = selectedNodes.map( <span class="function"><span class="params">node</span> =&gt;</span> node.data );</span></span><br><span class="line"><span class="javascript">                <span class="keyword">const</span> selectedDataStringPresentation = selectedData.map( <span class="function"><span class="params">node</span> =&gt;</span> node.make + <span class="string">' '</span> + node.model).join(<span class="string">', '</span>);</span></span><br><span class="line"><span class="javascript">                alert(<span class="string">`Selected nodes: <span class="subst">$&#123;selectedDataStringPresentation&#125;</span>`</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        beforeMount() &#123;</span><br><span class="line"><span class="javascript">            <span class="keyword">this</span>.columnDefs = [</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Make'</span>, <span class="attr">field</span>: <span class="string">'make'</span>, <span class="attr">checkboxSelection</span>: <span class="literal">true</span>&#125;,</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Model'</span>, <span class="attr">field</span>: <span class="string">'model'</span>&#125;,</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Price'</span>, <span class="attr">field</span>: <span class="string">'price'</span>&#125;</span></span><br><span class="line">            ];</span><br><span class="line"></span><br><span class="line"><span class="javascript">            fetch(<span class="string">'https://api.myjson.com/bins/15psn9'</span>)</span></span><br><span class="line"><span class="javascript">                .then(<span class="function"><span class="params">result</span> =&gt;</span> result.json())</span></span><br><span class="line"><span class="javascript">                .then(<span class="function"><span class="params">rowData</span> =&gt;</span> <span class="keyword">this</span>.rowData = rowData);</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>好吧，我们作弊了。呼叫提醒并不是对我们后端的调用。希望你能原谅我们这条捷径，以保持文章简洁明了。当然，在完成本教程后，您可以使用真实应用程序逻辑。</p>
+<h2 id="分组（企业）"><a href="#分组（企业）" class="headerlink" title="分组（企业）"></a>分组（企业）</h2><p><icon class="iconfont gy-sound-fill"></icon><br><code>Grouping is a feature exclusive to the enterprise version of ag-Grid.</code></p>
+<p>除了过滤和排序之外，分组是用户有效的看到大量数据的另一种有效方式。在我们的例子中，数据并不多。让我们切换到稍大的数据集：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">beforeMount() &#123;</span><br><span class="line">    <span class="keyword">this</span>.columnDefs = [</span><br><span class="line">        &#123;<span class="attr">headerName</span>: <span class="string">'Make'</span>, <span class="attr">field</span>: <span class="string">'make'</span>, <span class="attr">checkboxSelection</span>: <span class="literal">true</span>&#125;,</span><br><span class="line">        &#123;<span class="attr">headerName</span>: <span class="string">'Model'</span>, <span class="attr">field</span>: <span class="string">'model'</span>&#125;,</span><br><span class="line">        &#123;<span class="attr">headerName</span>: <span class="string">'Price'</span>, <span class="attr">field</span>: <span class="string">'price'</span>&#125;</span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">-    fetch(<span class="string">'https://api.myjson.com/bins/15psn9'</span>)</span><br><span class="line">-        .then(<span class="function"><span class="params">result</span> =&gt;</span> result.json())</span><br><span class="line">-        .then(<span class="function"><span class="params">rowData</span> =&gt;</span> <span class="keyword">this</span>.rowData = rowData);</span><br><span class="line">+    fetch(<span class="string">'https://api.myjson.com/bins/ly7d1'</span>)</span><br><span class="line">+        .then(<span class="function"><span class="params">result</span> =&gt;</span> result.json())</span><br><span class="line">+        .then(<span class="function"><span class="params">rowData</span> =&gt;</span> <span class="keyword">this</span>.rowData = rowData);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>然后，让我们启用ag-grid的企业功能。安装附加包：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save ag-grid-enterprise</span><br></pre></td></tr></table></figure></p>
+<p>然后，将导入添加到src / main.js：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"../node_modules/ag-grid/dist/styles/ag-grid.css"</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">"../node_modules/ag-grid/dist/styles/ag-theme-balham.css"</span>;</span><br><span class="line"></span><br><span class="line">+<span class="keyword">import</span> <span class="string">'ag-grid-enterprise'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App'</span></span><br></pre></td></tr></table></figure></p>
+<p>如果一切正常，您应该在控制台中看到一条消息，警告您缺少企业许可证。除此之外，网格还有一些UI改进 - 自定义上下文菜单和更高级的列菜单弹出窗口 - 随意环顾四周：<br><img src="https://www.ag-grid.com/getting-started/step3.png" alt></p>
+<p>现在，让我们启用分组！添加<code>autoGroupColumnDef</code>属性，绑定到它，并使用rowGroupIndex更新columnDefs：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"getSelectedRows()"</span>&gt;</span>Get Selected Rows<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ag-grid-vue</span> <span class="attr">style</span>=<span class="string">"width: 500px; height: 500px;"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">class</span>=<span class="string">"ag-theme-balham"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">:columnDefs</span>=<span class="string">"columnDefs"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">:rowData</span>=<span class="string">"rowData"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">:enableSorting</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">:enableFilter</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                     <span class="attr">rowSelection</span>=<span class="string">"multiple"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag">                     <span class="attr">:gridReady</span>=<span class="string">"onGridReady"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">ag-grid-vue</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">    <span class="keyword">import</span> &#123;AgGridVue&#125; <span class="keyword">from</span> <span class="string">"ag-grid-vue"</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="javascript">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="javascript">        name: <span class="string">'App'</span>,</span></span><br><span class="line">        data() &#123;</span><br><span class="line"><span class="javascript">            <span class="keyword">return</span> &#123;</span></span><br><span class="line"><span class="javascript">                columnDefs: <span class="literal">null</span>,</span></span><br><span class="line"><span class="javascript">                rowData: <span class="literal">null</span>,</span></span><br><span class="line"><span class="javascript">                gridApi: <span class="literal">null</span>,</span></span><br><span class="line"><span class="javascript">                columnApi: <span class="literal">null</span>,</span></span><br><span class="line"><span class="javascript">                autoGroupColumnDef: <span class="literal">null</span></span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        components: &#123;</span><br><span class="line">            AgGridVue</span><br><span class="line">        &#125;,</span><br><span class="line">        methods: &#123;</span><br><span class="line">            onGridReady(params) &#123;</span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.gridApi = params.api;</span></span><br><span class="line"><span class="javascript">                <span class="keyword">this</span>.columnApi = params.columnApi;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            getSelectedRows() &#123;</span><br><span class="line"><span class="javascript">                <span class="keyword">const</span> selectedNodes = <span class="keyword">this</span>.gridApi.getSelectedNodes();</span></span><br><span class="line"><span class="javascript">                <span class="keyword">const</span> selectedData = selectedNodes.map(<span class="function"><span class="params">node</span> =&gt;</span> node.data);</span></span><br><span class="line"><span class="javascript">                <span class="keyword">const</span> selectedDataStringPresentation = selectedData.map(<span class="function"><span class="params">node</span> =&gt;</span> node.make + <span class="string">' '</span> + node.model).join(<span class="string">', '</span>);</span></span><br><span class="line"><span class="javascript">                alert(<span class="string">`Selected nodes: <span class="subst">$&#123;selectedDataStringPresentation&#125;</span>`</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        beforeMount() &#123;</span><br><span class="line"><span class="javascript">            <span class="keyword">this</span>.columnDefs = [</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Make'</span>, <span class="attr">field</span>: <span class="string">'make'</span>, <span class="attr">rowGroupIndex</span>: <span class="number">0</span>&#125;,</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Model'</span>, <span class="attr">field</span>: <span class="string">'model'</span>&#125;,</span></span><br><span class="line"><span class="javascript">                &#123;<span class="attr">headerName</span>: <span class="string">'Price'</span>, <span class="attr">field</span>: <span class="string">'price'</span>&#125;</span></span><br><span class="line">            ];</span><br><span class="line"></span><br><span class="line"><span class="javascript">            <span class="keyword">this</span>.autoGroupColumnDef = &#123;</span></span><br><span class="line"><span class="javascript">                headerName: <span class="string">'Model'</span>,</span></span><br><span class="line"><span class="javascript">                field: <span class="string">'model'</span>,</span></span><br><span class="line"><span class="javascript">                cellRenderer: <span class="string">'agGroupCellRenderer'</span>,</span></span><br><span class="line">                cellRendererParams: &#123;</span><br><span class="line"><span class="javascript">                    checkbox: <span class="literal">true</span></span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;;</span><br><span class="line"></span><br><span class="line"><span class="javascript">            fetch(<span class="string">'https://api.myjson.com/bins/15psn9'</span>)</span></span><br><span class="line"><span class="javascript">                .then(<span class="function"><span class="params">result</span> =&gt;</span> result.json())</span></span><br><span class="line"><span class="javascript">                .then(<span class="function"><span class="params">rowData</span> =&gt;</span> <span class="keyword">this</span>.rowData = rowData);</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>接着走。网格现在按make对数据进行分组，同时在展开时列出模型字段值。请注意，分组也适用于复选框 - groupSelectsChildren属性添加了一个组级复选框，用于选择/取消选择组中的所有项目。</p>
+<p><icon class="iconfont gy-sound-fill"></icon><br><code>如果这一步感觉有点难，请不要担心 - 分组功能非常强大，并支持最初可能不需要的复杂交互方案。分组文档部分包含大量真实可运行的示例，可以帮助您了解特定情况。</code></p>
+<h2 id="自定义主题外观"><a href="#自定义主题外观" class="headerlink" title="自定义主题外观"></a>自定义主题外观</h2><p>我们要做的最后一件事是通过修改一些主题的Sass变量来改变网格外观。<br><br><br>默认情况下，ag-Grid提供了一组预先构建的主题样式表。如果我们想调整主题的颜色和字体，我们应该在项目中添加一个Sass预处理器，覆盖主题变量值，并引用ag-grid Sass文件而不是预先构建的样式表，以便变量覆盖是应用。<br><br><br>vue cli为我们做了很多工作（vue init webpack my-project），包括为Sass提供支持。让我们切换到使用提供的ag-Grid SCSS文件 - 首先，让我们创建一个新文件：<code>src / styles.scss</code>：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ag-icons-path: <span class="string">"../node_modules/ag-grid/src/styles/icons/"</span>;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">import</span> <span class="string">"~ag-grid/src/styles/ag-grid.scss"</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">"~ag-grid/src/styles/ag-theme-balham.scss"</span>;</span><br></pre></td></tr></table></figure></p>
+<p>请注意，我们必须通过设置$ ag-icons-path变量来帮助Sass预处理器。这是Sass的常见问题，因为外部图像路径被认为是相对于主文件。事实上，通过指定图标路径，我们也做了第一个主题覆盖！我们可以通过将变量中的路径更改为包含图标集的目录来更改整个主题图标集。<br><br><br>但是，让我们做一些更简单的事情。我们可以将交替的行背景颜色覆盖为灰蓝色。添加以下行：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ag-icons-path:<span class="string">"../node_modules/ag-grid/src/styles/icons/"</span>;</span><br><span class="line">+$odd-row-background-color:#CFD8DC;</span><br></pre></td></tr></table></figure></p>
+<p>我们现在需要在src / main.js中引用这个新文件：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">-<span class="keyword">import</span> <span class="string">"../node_modules/ag-grid/dist/styles/ag-grid.css"</span>;</span><br><span class="line">-<span class="keyword">import</span> <span class="string">"../node_modules/ag-grid/dist/styles/ag-theme-balham.css"</span>;</span><br><span class="line"></span><br><span class="line">+<span class="keyword">import</span> <span class="string">'./styles.scss'</span>;</span><br></pre></td></tr></table></figure></p>
+<p>如果一切配置正确，网格的第二行将变得稍暗。恭喜！您现在知道现在根据您的意愿改变网格 - 有几十个Sass变量可以让您控制字体系列和大小，边框颜色，标题背景颜色甚至单元格和列中的间距量。完整的Sass变量列表可在主题文档部分中找到。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>通过本教程，我们成功完成了许多工作。从三行/列设置的简陋开始，我们现在有一个网格，支持排序，过滤，绑定到远程数据，选择甚至分组！在这样做的同时，我们学习了如何配置网格，如何访问其API对象以及如何更改组件的样式。<br><br><br>不过，这只是表面上的问题。该网格提供了更多功能;使用自定义组件自定义单元格和标题的功能允许几乎无限的可能配置。</p>
+<h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><p>你渴望更多？请访问Vue指南部分，了解有关<a href="https://www.ag-grid.com/best-vuejs-data-grid/" target="_blank" rel="noopener">ag-Grid Vue</a>的更多深入信息。<br>[ag-grid-vue（进阶）]（<a href="https://yuguo.site/2018/10/16/ag-grid-vue-%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3%EF%BC%88%E8%BF%9B%E9%98%B6%EF%BC%89/#more）" target="_blank" rel="noopener">https://yuguo.site/2018/10/16/ag-grid-vue-%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3%EF%BC%88%E8%BF%9B%E9%98%B6%EF%BC%89/#more）</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vue/" rel="tag"># vue</a>
+          
+            <a href="/tags/ag-grid/" rel="tag"># ag-grid</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/24/iview2-升级-iview3/" rel="next" title="iview2 升级 iview3">
+                <i class="fa fa-chevron-left"></i> iview2 升级 iview3
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/16/ag-grid-vue-中文文档（进阶）/" rel="prev" title="ag-grid-vue 中文文档（进阶)">
+                ag-grid-vue 中文文档（进阶) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+  
+</div>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/me.jpg" alt="木念白">
+            
+              <p class="site-author-name" itemprop="name">木念白</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/woodguoyu" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/guo-yu-60-34/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:guoyu234@outlook.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="/about/" target="_blank" title="qq">
+                      
+                        <i class="fa fa-fw fa-globe"></i>qq</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#在Vue项目中开始使用ag-Grid"><span class="nav-number">1.</span> <span class="nav-text">在Vue项目中开始使用ag-Grid</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#将ag-Grid添加到您的项目中"><span class="nav-number">1.1.</span> <span class="nav-text">将ag-Grid添加到您的项目中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启用排序和筛选"><span class="nav-number">1.2.</span> <span class="nav-text">启用排序和筛选</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取远程数据"><span class="nav-number">1.3.</span> <span class="nav-text">获取远程数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启用选择"><span class="nav-number">1.4.</span> <span class="nav-text">启用选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分组（企业）"><span class="nav-number">1.5.</span> <span class="nav-text">分组（企业）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义主题外观"><span class="nav-number">1.6.</span> <span class="nav-text">自定义主题外观</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">1.7.</span> <span class="nav-text">小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下一步"><span class="nav-number">1.8.</span> <span class="nav-text">下一步</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">木念白</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by 木念白</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("2VWcIIetQAwQxYGDG8pY5HLn-MdYXbMMI", "KN2BaqkhFyX0NnWMEbyJ1pba");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
